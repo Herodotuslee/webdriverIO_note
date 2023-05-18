@@ -1,0 +1,23 @@
+{
+  "name": "wdio-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.10.2"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^8.10.2",
+    "@wdio/mocha-framework": "^8.10.2",
+    "@wdio/spec-reporter": "^8.10.2",
+    "chromedriver": "^113.0.0",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}
