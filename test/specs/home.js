@@ -26,6 +26,9 @@ describe("Home Page", () => {
   it('Find heading element & assert text', async () => {   
     const headingE1= await $('.elementor-widget-container h1');
     const headingText = await headingE1.getText();
-    await expect(headingText).toEqual('Think different. Make different.');
+    // await expect(headingText).toEqual('Think different. Make different.'); //Jest library
+    await expect(headingE1).toHaveText('Think different. Make different.'); //wdio expect wait priority
+    // Jest /Jasmin - for non element assertions
+    // wide expect - for element specific assertions
   })
 });
